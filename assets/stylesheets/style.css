@@ -265,4 +265,17 @@ flex-column {
       background: #ff5252;
       border-radius: 60px; }
 
+footer {
+  text-align: end;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px; }
+  footer hr {
+    margin-left: 50%;
+    height: 1px;
+    border: none;
+    background-color: #ff793f; }
+
 /*# sourceMappingURL=style.css.map */
