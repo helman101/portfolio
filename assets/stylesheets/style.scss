@@ -10,3 +10,68 @@ $mandaryn-sorbet: #ffb142;
 $almeda-ochre: #cc8e35;
 $spiced-butternud: #ffda79;
 $dessert: #ccae62;
+
+d-flex {
+  display: flex;
+}
+
+flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.left-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 20vw;
+  background-color: white;
+}
+
+.initials {
+  background-color: $mandaryn-sorbet;
+  border-radius: 43px;
+  padding: 30px 23px 30px 23px;
+  margin: 50px auto;
+  width: 43px;
+}
+
+.HO {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 105.3%;
+  color: $swan-white;
+}
+
+.menu {
+  width: 193px;
+  height: 276px;
+  margin: 0 auto;
+  padding-left: 25%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 338.5%;
+  a {
+    padding: 5px 10px;
+    transition: 0.2s;
+    border-radius: 20px;
+    text-decoration: none;
+    color: $grey-porcelain;
+    &:hover {
+      color: $chilean-fire;
+      background-color: $spiced-butternud;
+    }
+  }
+}
