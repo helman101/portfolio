@@ -289,9 +289,11 @@ flex-column {
   .form {
     font-family: Roboto;
     font-style: normal;
+    color: $grey-porcelain;
     .form-header {
       margin-bottom: 30px;
       input {
+        font-family: Roboto;
         color: $grey-porcelain;
         margin-right: 10px;
         font-size: 16px;
@@ -310,6 +312,11 @@ flex-column {
       }
     }
     textarea {
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 19px;
+      color: $grey-porcelain;
+      padding: 15px 20px;
       width: 100%;
       background: #FFFFFF;
       border: 1px solid rgba(0, 0, 0, 0.07);
@@ -336,6 +343,9 @@ flex-column {
 }
 
 footer {
+  padding: 10px;
+  position: relative;
+  color: white;
   text-align: end;
   font-family: Roboto;
   font-style: normal;
@@ -347,5 +357,11 @@ footer {
     height: 1px;
     border: none;
     background-color: $synthetic-pumpkin;
+  }
+  svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -5;
   }
 }

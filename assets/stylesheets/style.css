@@ -226,10 +226,12 @@ flex-column {
     line-height: 105.3%; }
   .main-footer .form {
     font-family: Roboto;
-    font-style: normal; }
+    font-style: normal;
+    color: #84817a; }
     .main-footer .form .form-header {
       margin-bottom: 30px; }
       .main-footer .form .form-header input {
+        font-family: Roboto;
         color: #84817a;
         margin-right: 10px;
         font-size: 16px;
@@ -245,6 +247,11 @@ flex-column {
           outline: none;
           box-shadow: 0px 7px 15px #ff793f80; }
     .main-footer .form textarea {
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 19px;
+      color: #84817a;
+      padding: 15px 20px;
       width: 100%;
       background: #FFFFFF;
       border: 1px solid rgba(0, 0, 0, 0.07);
@@ -266,6 +273,9 @@ flex-column {
       border-radius: 60px; }
 
 footer {
+  padding: 10px;
+  position: relative;
+  color: white;
   text-align: end;
   font-family: Roboto;
   font-style: normal;
@@ -277,5 +287,10 @@ footer {
     height: 1px;
     border: none;
     background-color: #ff793f; }
+  footer svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -5; }
 
 /*# sourceMappingURL=style.css.map */
