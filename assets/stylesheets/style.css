@@ -84,29 +84,31 @@ flex-column {
     font-weight: bold;
     font-size: 28px;
     line-height: 105.3%; }
-  .presentation .content {
-    width: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px; }
   .presentation .header-social {
     padding: 10px;
     color: #84817a;
     background-color: white;
     border-radius: 20px; }
 
+.content {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px; }
+
+.title {
+  margin: 50px 0 50px 0;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 105.3%;
+  color: #84817a; }
+
 .portfolio {
   flex-wrap: wrap;
   margin-left: 10%; }
-  .portfolio .title {
-    margin: 50px 0 50px 0;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 105.3%;
-    color: #84817a; }
   .portfolio .every-tech {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
     background-size: cover;
@@ -153,10 +155,47 @@ flex-column {
     bottom: 20px;
     left: 10px; }
     .portfolio .portfolio-links a {
+      margin-right: 10px;
       color: white;
       text-decoration: none;
-      padding: 10px;
-      border-radius: 15px;
+      padding: 10px 15px 10px 15px;
+      border-radius: 20px;
       background-color: #ff793f; }
+
+.about {
+  font-family: Roboto;
+  color: #84817a;
+  margin-left: 10%; }
+  .about .about-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+    color: #84817a;
+    margin-bottom: 20px; }
+  .about .content {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px; }
+  .about a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+    background-color: #ff793f; }
+
+.skill-column {
+  margin-top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  margin-right: 10%; }
+  .skill-column li {
+    list-style-type: none;
+    margin: 20px auto 20px auto; }
+  .skill-column .header {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 105.3%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -112,14 +112,6 @@ flex-column {
     font-size: 28px;
     line-height: 105.3%;
   }
-  .content {
-    width: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
   .header-social {
     padding: 10px;
     color: $grey-porcelain;
@@ -128,18 +120,27 @@ flex-column {
   }
 }
 
+.content {
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.title {
+  margin: 50px 0 50px 0;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 105.3%;
+  color: $grey-porcelain;
+}
+
 .portfolio {
   flex-wrap: wrap;
   margin-left: 10%;
-  .title {
-    margin: 50px 0 50px 0;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 105.3%;
-    color: $grey-porcelain;
-  }
-
   .every-tech {
     background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
     background-size: cover;
@@ -197,13 +198,56 @@ flex-column {
     bottom: 20px;
     left: 10px;
     a {
+      margin-right: 10px;
       color: white;
       text-decoration: none;
-      padding: 10px;
-      border-radius: 15px;
+      padding: 10px 15px 10px 15px;
+      border-radius: 20px;
       background-color: $synthetic-pumpkin;
     }
   }
 }
 
+.about {
+  font-family: Roboto;
+  color: $grey-porcelain;
+  margin-left: 10%;
+  .about-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+    color: $grey-porcelain;
+    margin-bottom: 20px;
+  }
+  .content {
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border-radius: 50px;
+    background-color: $synthetic-pumpkin;
+  }
+}
 
+
+.skill-column {
+  margin-top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  margin-right: 10%;
+  li {
+    list-style-type: none;
+    margin: 20px auto 20px auto;
+  }
+  .header {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 105.3%;
+  }
+}
