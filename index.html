@@ -16,15 +16,15 @@
       </div>
       <div class="menu">
         <div>
-          <a href="">Intro</a><br>
-          <a href="">Portfolio</a><br>
-          <a href="">About</a><br>
-          <a href="">Contact</a>
+          <a href="#intro">Intro</a><br>
+          <a href="#portfolio">Portfolio</a><br>
+          <a href="#about">About</a><br>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </aside>
     <div class="right-part">
-      <header>
+      <header id="intro">
         <div class='presentation'>
           <h1 class="name">Helman Ortegon</h1>
           <span class="prof">Full stack web developer</span>
@@ -46,12 +46,12 @@
         </div>
       </header>
       <main>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
           <div class="title">My Portfolio</div>
-          <div class="projects d-flex">
+          <div class="projects d-flex justify-content-center">
             <div class="project every-tech">
               <div class="wrapper">
-                <span class="project-title">Every-tech</span>
+                <span class="project-title">Every-Tech</span>
                 <div class="used-languages">
                   <span>HTML/CSS</span><span>Ruby on Rails</span>
                 </div>
@@ -61,11 +61,11 @@
                 </div>
               </div>
             </div>
-            <div class="project every-tech">
+            <div class="project terminal-movies">
               <div class="wrapper">
-                <span class="project-title">Every-tech</span>
+                <span class="project-title">Terminal Movies</span>
                 <div class="used-languages">
-                  <span>HTML/CSS</span><span>Ruby on Rails</span>
+                  <span>Ruby</span>
                 </div>
                 <div class="portfolio-links">
                   <a href="">See live</a> 
@@ -73,11 +73,11 @@
                 </div>
               </div>
             </div>
-            <div class="project every-tech">
+            <div class="project event">
               <div class="wrapper">
-                <span class="project-title">Every-tech</span>
+                <span class="project-title">Convent page</span>
                 <div class="used-languages">
-                  <span>HTML/CSS</span><span>Ruby on Rails</span>
+                  <span>HTML/CSS</span>
                 </div>
                 <div class="portfolio-links">
                   <a href="">See live</a> 
@@ -85,11 +85,11 @@
                 </div>
               </div>
             </div>
-            <div class="project every-tech">
+            <div class="project newsweek">
               <div class="wrapper">
-                <span class="project-title">Every-tech</span>
+                <span class="project-title">Newsweek Clone</span>
                 <div class="used-languages">
-                  <span>HTML/CSS</span><span>Ruby on Rails</span>
+                  <span>HTML/CSS</span><span>Bootstrap</span>
                 </div>
                 <div class="portfolio-links">
                   <a href="">See live</a> 
@@ -99,7 +99,7 @@
             </div>
           </div>
         </section>
-        <section class="about"> 
+        <section id="about" class="about"> 
           <div class="title">About me</div>
           <p class="content">
             I'm always ready to learn anything that increases my knowledge and help me to be the best developer, I like to challenge my abilities with tools different tool.
@@ -135,18 +135,18 @@
             </div>
           </div>
         </section>
-        <section class="main-footer">
+        <section id="contact" class="main-footer">
           <div class="collaborate">
-            <div class="collaborate-title">Interested in collaborating?</div>
-            <p class="collaborate-description">
+            <div class="title">Interested in collaborating?</div>
+            <p >
               If you have an application you are interested in developing, a feature that you need built or a project that need coding, I’d love to help you with it.
             </p>
           </div>
           <div class="form">
             <form action="submit">
               <div class="form-header">
-                <input type="text">
-                <input type="email">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="example@email.com">
               </div>
               <textarea name="" id="" cols="30" rows="10"></textarea>
               <button>Get in touch</button>
@@ -154,8 +154,8 @@
           </div>
         </section>
       </main>
-      <footer>
-        <span class="email">helmanandresortegon@gmail.com</span>
+      <footer class="">
+        <span class="email">helmanandresortegon@gmail.com</span><br>
         <div class="footer-social">
   
         </div>

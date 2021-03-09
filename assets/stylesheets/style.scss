@@ -41,7 +41,7 @@ flex-column {
 }
 
 .initials {
-  background-color: $mandaryn-sorbet;
+  background-color: $fluorecent-red;
   border-radius: 43px;
   padding: 30px 23px 30px 23px;
   margin: 50px auto;
@@ -139,10 +139,29 @@ flex-column {
 }
 
 .portfolio {
+  width: 80%;
+  margin: 0 auto;
   flex-wrap: wrap;
-  margin-left: 10%;
   .every-tech {
     background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .terminal-movies {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/movie-scraper/raw/readme/img/scraper_screenshot.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .event {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/overwatch-con/raw/master/assets/desktop-screenshot.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .newsweek {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Newsweek-clone/raw/master/assets/desktop-screenshot.png);
     background-size: cover;
     background-position: center;
   }
@@ -157,7 +176,7 @@ flex-column {
     margin-bottom: 20px;
     flex-direction: row;
     border-radius: 10px;
-    width: 35%;
+    width: 45%;
     height: 280px;
     font-family: Poppins;
     .wrapper {
@@ -167,8 +186,8 @@ flex-column {
     }
     .project-title {
       position: absolute;
-      left: 10px;
-      top: 10px;
+      left: 30px;
+      top: 30px;
       color: white;
       font-weight: 600;
       font-size: 20px;
@@ -178,25 +197,25 @@ flex-column {
 
   .used-languages {
     position: absolute;
-    top: 50px;
-    left: 10px;
+    top: 60px;
+    left: 30px;
     span {
       margin-right: 10px;
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 50px;
       background-color: darkgray;
       color: white;
-      padding: 5px;
+      padding: 5px 10px;
     }
   }
 
   .portfolio-links {
     position: absolute;
-    bottom: 20px;
-    left: 10px;
+    bottom: 30px;
+    left: 25px;
     a {
       margin-right: 10px;
       color: white;
@@ -226,6 +245,7 @@ flex-column {
     line-height: 22px;
   }
   a {
+    font-weight: bold;
     margin-right: 10px;
     color: white;
     text-decoration: none;
@@ -240,14 +260,77 @@ flex-column {
   margin-top: 100px;
   font-family: Roboto;
   font-style: normal;
-  margin-right: 10%;
+  width: 30%;
   li {
     list-style-type: none;
     margin: 20px auto 20px auto;
+    font-size: 16px;
+    line-height: 242.5%;
   }
   .header {
     font-weight: bold;
     font-size: 22px;
     line-height: 105.3%;
+  }
+}
+
+.main-footer {
+  width: 50%;
+  margin-left: 10%;
+  color: $grey-porcelain;
+  font-family: Roboto;
+  font-style: normal;
+  .collaborate-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+  }
+
+  .form {
+    font-family: Roboto;
+    font-style: normal;
+    .form-header {
+      margin-bottom: 30px;
+      input {
+        color: $grey-porcelain;
+        margin-right: 10px;
+        font-size: 16px;
+        width: 40%;
+        line-height: 24px;
+        padding: 15px 20px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        box-sizing: border-box;
+        box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+        border-radius: 14px;
+        &:focus-visible {
+          outline: none;
+          box-shadow: 0px 7px 15px #ff793f80;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      box-sizing: border-box;
+      box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+      border-radius: 14px;
+      resize: none;
+      &:focus-visible {
+        outline: none;
+        box-shadow: 0px 7px 15px #ff793f80;
+      }
+    }
+    button {
+      margin: 30px auto;
+      font-size: 16px;
+      line-height: 105.3%;
+      padding: 15px 20px 15px 20px;
+      color: white;
+      border: none;
+      background: $fluorecent-red;
+      border-radius: 60px;
+    }
   }
 }
