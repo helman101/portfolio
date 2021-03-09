@@ -1,7 +1,7 @@
 * {
   box-sizing: content-box; }
 
-d-flex {
+.d-flex {
   display: flex; }
 
 flex-column {
@@ -96,5 +96,67 @@ flex-column {
     color: #84817a;
     background-color: white;
     border-radius: 20px; }
+
+.portfolio {
+  flex-wrap: wrap;
+  margin-left: 10%; }
+  .portfolio .title {
+    margin: 50px 0 50px 0;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 105.3%;
+    color: #84817a; }
+  .portfolio .every-tech {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
+    background-size: cover;
+    background-position: center; }
+  .portfolio .projects {
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .portfolio .project {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 35%;
+    height: 280px;
+    font-family: Poppins; }
+    .portfolio .project .wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+    .portfolio .project .project-title {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 105.3%; }
+  .portfolio .used-languages {
+    position: absolute;
+    top: 50px;
+    left: 10px; }
+    .portfolio .used-languages span {
+      margin-right: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: darkgray;
+      color: white;
+      padding: 5px; }
+  .portfolio .portfolio-links {
+    position: absolute;
+    bottom: 20px;
+    left: 10px; }
+    .portfolio .portfolio-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #ff793f; }
 
 /*# sourceMappingURL=style.css.map */
