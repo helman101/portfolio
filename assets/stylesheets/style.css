@@ -1,11 +1,16 @@
 * {
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
 
 .d-flex {
   display: flex; }
 
-flex-column {
+.flex-column {
   flex-direction: column; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
 
 .justify-content-center {
   justify-content: center; }
@@ -19,25 +24,46 @@ flex-column {
 .left-menu {
   position: fixed;
   top: 0;
-  left: 0;
   height: 100vh;
   width: 20vw;
   background-color: white; }
-
-.initials {
-  background-color: #ff5252;
-  border-radius: 50px;
-  padding: 30px 23px 30px 25px;
-  margin: 50px auto;
-  width: 43px; }
-
-.HO {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 28px;
-  line-height: 105.3%;
-  color: white; }
+  .left-menu .initials {
+    background-color: #ff793f;
+    border-radius: 50px;
+    padding: 30px 23px 30px 23px;
+    margin: 50px auto;
+    width: 43px; }
+  .left-menu .HO {
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 105.3%; }
+  @media screen and (max-width: 376px) {
+    .left-menu {
+      z-index: 6;
+      position: fixed;
+      height: 80px;
+      width: 100vw;
+      flex-direction: row;
+      background-color: white;
+      color: white; }
+      .left-menu .initials {
+        width: 64px;
+        height: 64px;
+        margin: 15px auto;
+        padding: 0; }
+      .left-menu .HO {
+        font-size: 20px;
+        line-height: 105.3%; }
+      .left-menu .menu {
+        flex-direction: row;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 338.5%; }
+        .left-menu .menu a {
+          color: #84817a; } }
 
 .social a {
   text-decoration: none;
@@ -49,10 +75,8 @@ flex-column {
     height: auto; }
 
 .menu {
-  width: 193px;
-  height: 276px;
+  align-items: start;
   margin: 0 auto;
-  padding-left: 25%;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -70,6 +94,9 @@ flex-column {
 .right-part {
   margin: 0 0 0 20vw;
   justify-content: end; }
+  @media screen and (max-width: 376px) {
+    .right-part {
+      margin: 0; } }
 
 .bg-image {
   justify-content: end;
@@ -81,10 +108,11 @@ header {
   background-image: url(../images/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  z-index: -5; }
 
 .presentation {
-  top: 15%;
+  top: 25%;
   right: 0;
   width: 80%;
   height: 100vh;
@@ -113,6 +141,22 @@ header {
     color: #84817a;
     background-color: white;
     border-radius: 20px; }
+  @media screen and (max-width: 376px) {
+    .presentation {
+      right: 5%;
+      width: 90%; }
+      .presentation .name {
+        font-size: 60px; }
+      .presentation .prof {
+        font-size: 20px; }
+      .presentation .content {
+        width: auto; }
+      .presentation .header-social {
+        width: auto; }
+      .presentation .header-social {
+        font-size: 13px; }
+      .presentation .social a {
+        margin: 0; } }
 
 .content {
   width: 50%;
@@ -206,6 +250,11 @@ header {
       transition: 0.3s; }
       .portfolio .portfolio-links a:hover {
         background-color: #cd6133; }
+  @media screen and (max-width: 376px) {
+    .portfolio {
+      width: 90%; }
+      .portfolio .project {
+        width: 100%; } }
 
 .about {
   font-family: Roboto;
@@ -233,6 +282,9 @@ header {
     transition: 0.3s; }
     .about a:hover {
       background-color: #cd6133; }
+  @media screen and (max-width: 376px) {
+    .about .content {
+      width: auto; } }
 
 .skill-column {
   margin-top: 100px;
@@ -248,6 +300,12 @@ header {
     font-weight: bold;
     font-size: 22px;
     line-height: 105.3%; }
+  @media screen and (max-width: 376px) {
+    .skill-column {
+      width: 90%;
+      margin: 10px auto; }
+      .skill-column:first-child {
+        margin-top: 30px; } }
 
 .main-footer {
   width: 50%;
@@ -255,10 +313,6 @@ header {
   color: #84817a;
   font-family: Roboto;
   font-style: normal; }
-  .main-footer .collaborate-title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 105.3%; }
   .main-footer .form {
     font-family: Roboto;
     font-style: normal;
@@ -310,6 +364,19 @@ header {
       transition: 0.3s; }
       .main-footer .form button:hover {
         background-color: #b33939; }
+  @media screen and (max-width: 376px) {
+    .main-footer {
+      width: 80%; }
+      .main-footer .collaborate p {
+        width: auto;
+        margin-bottom: 20px; }
+      .main-footer .form .form-header input {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%; }
+      .main-footer .form button {
+        background-color: #b33939;
+        width: 90%; } }
 
 footer {
   padding: 10px;
@@ -322,12 +389,12 @@ footer {
   font-size: 16px;
   line-height: 19px; }
   footer hr {
-    margin-left: 50%;
+    margin: 10px 0 10px 50%;
     height: 1px;
     border: none;
     background-color: #ffb142; }
   footer .social {
-    margin-top: 5px; }
+    margin: 10px auto; }
     footer .social a {
       text-decoration: none;
       margin-right: 5px; }
@@ -341,5 +408,12 @@ footer {
     bottom: 0;
     right: 0;
     z-index: -5; }
+  @media screen and (max-width: 376px) {
+    footer {
+      text-align: center; }
+      footer hr {
+        margin-left: 0; }
+      footer .social {
+        margin: 10px auto; } }
 
 /*# sourceMappingURL=style.css.map */
