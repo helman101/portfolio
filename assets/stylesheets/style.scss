@@ -58,7 +58,7 @@ flex-column {
   font-weight: 800;
   font-size: 28px;
   line-height: 105.3%;
-  color: $swan-white;
+  color: white;
 }
 
 .social {
@@ -91,8 +91,7 @@ flex-column {
     text-decoration: none;
     color: $grey-porcelain;
     &:hover {
-      color: $chilean-fire;
-      background-color: $spiced-butternud;
+      color: $synthetic-pumpkin;
     }
   }
 }
@@ -261,6 +260,10 @@ header {
       padding: 10px 15px 10px 15px;
       border-radius: 20px;
       background-color: $synthetic-pumpkin;
+      transition: 0.3s;
+      &:hover {
+        background-color: $chilean-fire;
+      }
     }
   }
 }
@@ -290,6 +293,10 @@ header {
     padding: 15px 20px 15px 20px;
     border-radius: 50px;
     background-color: $synthetic-pumpkin;
+    transition: 0.3s;
+    &:hover {
+      background-color: $chilean-fire;
+    }
   }
 }
 
@@ -368,6 +375,7 @@ header {
       }
     }
     button {
+      cursor: pointer;
       margin: 30px auto;
       font-size: 16px;
       line-height: 105.3%;
@@ -376,6 +384,10 @@ header {
       border: none;
       background: $fluorecent-red;
       border-radius: 60px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $eye-of-newt;
+      }
     }
   }
 }
