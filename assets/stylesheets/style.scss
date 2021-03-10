@@ -64,7 +64,7 @@ $medium: 910px;
     font-size: 28px;
     line-height: 105.3%;
   }
-  @media screen and (max-width: $small){
+  @media screen and (max-width: $medium){
     z-index: 6;
     position: fixed;
     height: 80px;
@@ -91,9 +91,6 @@ $medium: 910px;
         color: $grey-porcelain;
       }
     }
-  }
-  @media screen and (max-width: $medium){
-    
   }
 }
 
@@ -137,7 +134,7 @@ $medium: 910px;
 .right-part {
   margin: 0 0 0 20vw;
   justify-content: end;
-  @media screen and (max-width: $small){
+  @media screen and (max-width: $medium){
     margin: 0;
   }
 }
@@ -158,7 +155,7 @@ header {
 }
 
 .presentation {
-  top: 25%;
+  top: 20%;
   right: 0;
   width: 80%;
   height: 100vh;
@@ -214,6 +211,20 @@ header {
         margin: 0;
       }
     } 
+  }
+  @media screen and (max-width: $medium){
+    top: 25%;
+    right: 5%;
+    width: 90%;
+    .content {
+      width: auto;
+    }
+    .header-social {
+      width: auto;
+    }
+    .prof {
+      font-size: 20px;
+    }
   }
 }
 
@@ -332,6 +343,12 @@ header {
       }
     }
   }
+  @media screen and (max-width: $medium){
+    width: 90%;
+    .project {
+      width: 100%;
+    }
+  }
   @media screen and (max-width: $small){
     width: 90%;
     .project {
@@ -375,6 +392,11 @@ header {
       width: auto;
     }
   }
+  @media screen and (max-width: $medium){
+    .content {
+      width: 80%;
+    }
+  }
 }
 
 
@@ -394,9 +416,12 @@ header {
     font-size: 22px;
     line-height: 105.3%;
   }
+  @media screen and (max-width: $medium){
+    width: 33.3%;
+  }
   @media screen and (max-width: $small){
     width: 90%;
-    margin: 10px auto;
+    margin: 10px 5%;
     &:first-child {
       margin-top: 30px;
     }
@@ -415,7 +440,7 @@ header {
     font-style: normal;
     color: $grey-porcelain;
     .form-header {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       input {
         font-family: Roboto;
         color: $grey-porcelain;
@@ -488,6 +513,28 @@ header {
       button {
         background-color: $eye-of-newt;
         width: 90%;
+      }
+    }
+  }
+  @media screen and (max-width: $medium){
+    width: 80%;
+    .collaborate {
+      p {
+        width: auto;
+        margin-bottom: 20px;
+      }
+    }
+    .form {
+      .form-header {
+        input {
+          margin-bottom: 5px;
+          display: inline;
+          width: 45%; 
+        }
+      }
+      button {
+        background-color: $eye-of-newt;
+        width: 95%;
       }
     }
   }

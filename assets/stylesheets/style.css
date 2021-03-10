@@ -40,7 +40,7 @@
     font-weight: 800;
     font-size: 28px;
     line-height: 105.3%; }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 910px) {
     .left-menu {
       z-index: 6;
       position: fixed;
@@ -94,7 +94,7 @@
 .right-part {
   margin: 0 0 0 20vw;
   justify-content: end; }
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 910px) {
     .right-part {
       margin: 0; } }
 
@@ -112,7 +112,7 @@ header {
   z-index: -5; }
 
 .presentation {
-  top: 25%;
+  top: 20%;
   right: 0;
   width: 80%;
   height: 100vh;
@@ -157,6 +157,17 @@ header {
         font-size: 13px; }
       .presentation .social a {
         margin: 0; } }
+  @media screen and (max-width: 910px) {
+    .presentation {
+      top: 25%;
+      right: 5%;
+      width: 90%; }
+      .presentation .content {
+        width: auto; }
+      .presentation .header-social {
+        width: auto; }
+      .presentation .prof {
+        font-size: 20px; } }
 
 .content {
   width: 50%;
@@ -250,6 +261,11 @@ header {
       transition: 0.3s; }
       .portfolio .portfolio-links a:hover {
         background-color: #cd6133; }
+  @media screen and (max-width: 910px) {
+    .portfolio {
+      width: 90%; }
+      .portfolio .project {
+        width: 100%; } }
   @media screen and (max-width: 376px) {
     .portfolio {
       width: 90%; }
@@ -285,6 +301,9 @@ header {
   @media screen and (max-width: 376px) {
     .about .content {
       width: auto; } }
+  @media screen and (max-width: 910px) {
+    .about .content {
+      width: 80%; } }
 
 .skill-column {
   margin-top: 100px;
@@ -300,10 +319,13 @@ header {
     font-weight: bold;
     font-size: 22px;
     line-height: 105.3%; }
+  @media screen and (max-width: 910px) {
+    .skill-column {
+      width: 33.3%; } }
   @media screen and (max-width: 376px) {
     .skill-column {
       width: 90%;
-      margin: 10px auto; }
+      margin: 10px 5%; }
       .skill-column:first-child {
         margin-top: 30px; } }
 
@@ -318,7 +340,7 @@ header {
     font-style: normal;
     color: #84817a; }
     .main-footer .form .form-header {
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
       .main-footer .form .form-header input {
         font-family: Roboto;
         color: #84817a;
@@ -377,6 +399,19 @@ header {
       .main-footer .form button {
         background-color: #b33939;
         width: 90%; } }
+  @media screen and (max-width: 910px) {
+    .main-footer {
+      width: 80%; }
+      .main-footer .collaborate p {
+        width: auto;
+        margin-bottom: 20px; }
+      .main-footer .form .form-header input {
+        margin-bottom: 5px;
+        display: inline;
+        width: 45%; }
+      .main-footer .form button {
+        background-color: #b33939;
+        width: 95%; } }
 
 footer {
   padding: 10px;
