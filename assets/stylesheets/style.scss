@@ -66,6 +66,7 @@ flex-column {
     text-decoration: none;
     margin-right: 5px;
     svg {
+      position: static;
       fill: $synthetic-pumpkin;
       width: 30px;
       height: auto;
@@ -103,20 +104,34 @@ flex-column {
 
 .bg-image {
   justify-content: end;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(257.1deg, #b33939d8 27.51%, #ff793fc2 113.53%), url(/assets/images/background.svg);
   height: 100vh;
 }
 
-.presentation {
-  top: 20%;
-  right: 10%;
-  width: 50%;
+header {
   position: relative;
+  height: 100vh;
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation {
+  top: 15%;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  position: absolute;
   color: white;
   font-family: Roboto;
   font-style: normal;
+  svg {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    z-index: -5;
+    object-fit: cover;
+  }
   .name {
     margin-bottom: 0;
     font-weight: bold;
@@ -233,6 +248,12 @@ flex-column {
     position: absolute;
     bottom: 30px;
     left: 25px;
+    svg {
+      margin-left: 5px;
+      width: 25px;
+      height: auto;
+      fill: white;
+    }
     a {
       margin-right: 10px;
       color: white;
