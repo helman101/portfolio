@@ -438,6 +438,9 @@ footer {
         position: static;
         width: 30px;
         height: auto; }
+  footer .icons-rigth a {
+    color: #b33939;
+    text-decoration: none; }
   footer svg {
     position: absolute;
     bottom: 0;

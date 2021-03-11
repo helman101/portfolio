@@ -569,6 +569,12 @@ footer {
       }
     }
   }
+  .icons-rigth {
+    a {
+      color: $eye-of-newt;
+      text-decoration: none;
+    }
+  }
   svg {
     position: absolute;
     bottom: 0;
