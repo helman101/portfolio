@@ -13,7 +13,7 @@ $dessert: #ccae62;
 $small: 376px;
 $medium: 910px;
 
-*{
+* {
   box-sizing: content-box;
   margin: 0;
   padding: 0;
@@ -49,6 +49,7 @@ $medium: 910px;
   height: 100vh;
   width: 20vw;
   background-color: white;
+
   .initials {
     background-color: $synthetic-pumpkin;
     border-radius: 50px;
@@ -56,15 +57,17 @@ $medium: 910px;
     margin: 50px auto;
     width: 43px;
   }
+
   .HO {
     color: white;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 28px;
     line-height: 105.3%;
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     z-index: 6;
     position: fixed;
     height: 80px;
@@ -72,21 +75,25 @@ $medium: 910px;
     flex-direction: row;
     background-color: white;
     color: white;
+
     .initials {
       width: 64px;
       height: 64px;
       margin: 15px auto;
       padding: 0;
     }
+
     .HO {
       font-size: 20px;
       line-height: 105.3%;
     }
+
     .menu {
       flex-direction: row;
       padding-left: 0;
       font-size: 16px;
       line-height: 338.5%;
+
       a {
         color: $grey-porcelain;
       }
@@ -94,14 +101,25 @@ $medium: 910px;
   }
 }
 
+footer svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -5;
+}
 
-
-
+.presentation svg {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: -5;
+}
 
 .social {
   a {
     text-decoration: none;
     margin-right: 5px;
+
     svg {
       position: static;
       fill: $synthetic-pumpkin;
@@ -111,30 +129,84 @@ $medium: 910px;
   }
 }
 
+.about a {
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  background-color: $synthetic-pumpkin;
+  transition: 0.3s;
+}
+
+.menu a {
+  padding: 5px 10px;
+  transition: 0.2s;
+  border-radius: 20px;
+  text-decoration: none;
+  color: $grey-porcelain;
+}
+
+footer .social a {
+  text-decoration: none;
+  margin-right: 5px;
+
+  svg {
+    fill: $eye-of-newt;
+    position: static;
+    width: 30px;
+    height: auto;
+  }
+}
+
+footer .icons-rigth a {
+  color: $mandaryn-sorbet;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: $synthetic-pumpkin;
+}
+
+.about a:hover {
+  background-color: $chilean-fire;
+}
+
+.portfolio .portfolio-links a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  background-color: $synthetic-pumpkin;
+  transition: 0.3s;
+}
+
+footer .icons-rigth a:hover {
+  color: yellow;
+}
+
+.portfolio .portfolio-links a:hover {
+  background-color: $chilean-fire;
+}
+
 .menu {
   align-items: start;
   margin: 0 auto;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 338.5%;
-  a {
-    padding: 5px 10px;
-    transition: 0.2s;
-    border-radius: 20px;
-    text-decoration: none;
-    color: $grey-porcelain;
-    &:hover {
-      color: $synthetic-pumpkin;
-    }
-  }
 }
 
 .right-part {
   margin: 0 0 0 20vw;
   justify-content: end;
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     margin: 0;
   }
 }
@@ -161,25 +233,22 @@ header {
   height: 100vh;
   position: absolute;
   color: white;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
-  svg {
-    position: absolute;
-    top: 1px;
-    right: 0;
-    z-index: -5;
-  }
+
   .name {
     margin-bottom: 0;
     font-weight: bold;
     font-size: 88px;
     line-height: 105.3%;
   }
+
   .prof {
     font-weight: bold;
     font-size: 28px;
     line-height: 105.3%;
   }
+
   .header-social {
     width: 75%;
     padding: 10px 15px;
@@ -187,40 +256,48 @@ header {
     background-color: white;
     border-radius: 20px;
   }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     right: 5%;
     width: 90%;
+
     .name {
       font-size: 60px;
     }
+
     .prof {
       font-size: 20px;
     }
+
     .content {
       width: auto;
     }
+
     .header-social {
       width: auto;
-    }
-    .header-social {
       font-size: 13px;
     }
+
     .social {
       a {
         margin: 0;
       }
-    } 
+    }
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     top: 25%;
     right: 5%;
     width: 90%;
+
     .content {
       width: auto;
     }
+
     .header-social {
       width: auto;
     }
+
     .prof {
       font-size: 20px;
     }
@@ -238,7 +315,7 @@ header {
 
 .title {
   margin: 50px 0 50px 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 28px;
   line-height: 105.3%;
@@ -249,8 +326,9 @@ header {
   width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
+
   .every-tech {
-    background-image:  linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
     background-size: cover;
     background-position: center;
   }
@@ -285,12 +363,14 @@ header {
     border-radius: 10px;
     width: 45%;
     height: 280px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+
     .wrapper {
       position: relative;
       width: 100%;
       height: 100%;
     }
+
     .project-title {
       position: absolute;
       left: 30px;
@@ -306,6 +386,7 @@ header {
     position: absolute;
     top: 60px;
     left: 30px;
+
     span {
       margin-right: 10px;
       font-weight: 500;
@@ -323,33 +404,26 @@ header {
     position: absolute;
     bottom: 30px;
     left: 25px;
+
     svg {
       margin-left: 5px;
       width: 25px;
       height: auto;
       fill: white;
     }
-    a {
-      margin-right: 10px;
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px 10px 15px;
-      border-radius: 20px;
-      background-color: $synthetic-pumpkin;
-      transition: 0.3s;
-      &:hover {
-        background-color: $chilean-fire;
-      }
-    }
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     width: 90%;
+
     .project {
       width: 100%;
     }
   }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     width: 90%;
+
     .project {
       width: 100%;
     }
@@ -357,9 +431,10 @@ header {
 }
 
 .about {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: $grey-porcelain;
   margin-left: 10%;
+
   .about-title {
     font-weight: bold;
     font-size: 28px;
@@ -367,60 +442,54 @@ header {
     color: $grey-porcelain;
     margin-bottom: 20px;
   }
+
   .content {
     margin-bottom: 50px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 22px;
   }
-  a {
-    font-weight: bold;
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px 15px 20px;
-    border-radius: 50px;
-    background-color: $synthetic-pumpkin;
-    transition: 0.3s;
-    &:hover {
-      background-color: $chilean-fire;
-    }
-  }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     .content {
       width: auto;
     }
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     .content {
       width: 80%;
     }
   }
 }
 
-
 .skill-column {
   margin-top: 100px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   width: 30%;
+
   li {
     list-style-type: none;
     margin: 20px auto 20px auto;
     font-size: 16px;
     line-height: 242.5%;
   }
+
   .header {
     font-weight: bold;
     font-size: 22px;
     line-height: 105.3%;
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     width: 33.3%;
   }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     width: 90%;
     margin: 10px 5%;
+
     &:first-child {
       margin-top: 30px;
     }
@@ -431,52 +500,58 @@ header {
   width: 50%;
   margin-left: 10%;
   color: $grey-porcelain;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
 
   .form {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     color: $grey-porcelain;
+
     .form-header {
       margin-bottom: 20px;
+
       input {
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         color: $grey-porcelain;
         margin-right: 10px;
         font-size: 16px;
         width: 40%;
         line-height: 24px;
         padding: 15px 20px;
-        background: #FFFFFF;
+        background: #fff;
         border: 1px solid rgba(0, 0, 0, 0.07);
         box-sizing: border-box;
-        box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+        box-shadow: 0 7px 15px rgba(95, 104, 186, 0.13);
         border-radius: 14px;
+
         &:focus-visible {
           outline: none;
-          box-shadow: 0px 7px 15px  #b33939ad;
+          box-shadow: 0 7px 15px  #b33939ad;
         }
       }
     }
+
     textarea {
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 16px;
       line-height: 19px;
       color: $grey-porcelain;
       padding: 15px 20px;
       width: 100%;
-      background: #FFFFFF;
+      background: #fff;
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-sizing: border-box;
-      box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+      box-shadow: 0 7px 15px rgba(95, 104, 186, 0.13);
       border-radius: 14px;
       resize: none;
+
       &:focus-visible {
         outline: none;
-        box-shadow: 0px 7px 15px #b33939ad;
+        box-shadow: 0 7px 15px #b33939ad;
       }
     }
+
     button {
       cursor: pointer;
       margin: 30px auto;
@@ -488,49 +563,58 @@ header {
       background: $fluorecent-red;
       border-radius: 60px;
       transition: 0.3s;
+
       &:hover {
         background-color: $eye-of-newt;
       }
     }
   }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     width: 80%;
+
     .collaborate {
       p {
         width: auto;
         margin-bottom: 20px;
       }
     }
+
     .form {
       .form-header {
         input {
           margin-bottom: 10px;
           display: block;
-          width: 100%; 
+          width: 100%;
         }
       }
+
       button {
         background-color: $eye-of-newt;
         width: 90%;
       }
     }
   }
-  @media screen and (max-width: $medium){
+
+  @media screen and (max-width: $medium) {
     width: 80%;
+
     .collaborate {
       p {
         width: auto;
         margin-bottom: 20px;
       }
     }
+
     .form {
       .form-header {
         input {
           margin-bottom: 5px;
           display: inline;
-          width: 45%; 
+          width: 45%;
         }
       }
+
       button {
         background-color: $eye-of-newt;
         width: 95%;
@@ -544,51 +628,30 @@ footer {
   position: relative;
   color: white;
   text-align: end;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+
   hr {
     margin: 10px 0 10px 50%;
     height: 1px;
     border: none;
     background-color: $mandaryn-sorbet;
   }
+
   .social {
     margin: 10px auto;
-    a {
-      text-decoration: none;
-      margin-right: 5px;
-      svg {
-        fill: $eye-of-newt;
-        position: static;
-        width: 30px;
-        height: auto;
-      }
-    }
   }
-  .icons-rigth {
-    a {
-      color: $mandaryn-sorbet;
-      text-decoration: none;
-      font-weight: bold;
-      &:hover {
-        color: yellow;
-      }
-    }
-  }
-  svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -5;
-  }
-  @media screen and (max-width: $small){
+
+  @media screen and (max-width: $small) {
     text-align: center;
+
     hr {
       margin-left: 0;
     }
+
     .social {
       margin: 10px auto;
     }

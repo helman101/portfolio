@@ -35,7 +35,7 @@
     width: 43px; }
   .left-menu .HO {
     color: white;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 28px;
@@ -65,6 +65,18 @@
         .left-menu .menu a {
           color: #84817a; } }
 
+footer svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -5; }
+
+.presentation svg {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: -5; }
+
 .social a {
   text-decoration: none;
   margin-right: 5px; }
@@ -74,22 +86,66 @@
     width: 30px;
     height: auto; }
 
+.about a {
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 50px;
+  background-color: #ff793f;
+  transition: 0.3s; }
+
+.menu a {
+  padding: 5px 10px;
+  transition: 0.2s;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #84817a; }
+
+footer .social a {
+  text-decoration: none;
+  margin-right: 5px; }
+  footer .social a svg {
+    fill: #b33939;
+    position: static;
+    width: 30px;
+    height: auto; }
+
+footer .icons-rigth a {
+  color: #ffb142;
+  text-decoration: none;
+  font-weight: bold; }
+
+.menu a:hover {
+  color: #ff793f; }
+
+.about a:hover {
+  background-color: #cd6133; }
+
+.portfolio .portfolio-links a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  background-color: #ff793f;
+  transition: 0.3s; }
+
+footer .icons-rigth a:hover {
+  color: yellow; }
+
+.portfolio .portfolio-links a:hover {
+  background-color: #cd6133; }
+
 .menu {
   align-items: start;
   margin: 0 auto;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 338.5%; }
-  .menu a {
-    padding: 5px 10px;
-    transition: 0.2s;
-    border-radius: 20px;
-    text-decoration: none;
-    color: #84817a; }
-    .menu a:hover {
-      color: #ff793f; }
 
 .right-part {
   margin: 0 0 0 20vw;
@@ -118,14 +174,8 @@ header {
   height: 100vh;
   position: absolute;
   color: white;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal; }
-  .presentation svg {
-    position: absolute;
-    top: 1px;
-    right: 0;
-    z-index: -5;
-    object-fit: cover; }
   .presentation .name {
     margin-bottom: 0;
     font-weight: bold;
@@ -152,8 +202,7 @@ header {
       .presentation .content {
         width: auto; }
       .presentation .header-social {
-        width: auto; }
-      .presentation .header-social {
+        width: auto;
         font-size: 13px; }
       .presentation .social a {
         margin: 0; } }
@@ -179,7 +228,7 @@ header {
 
 .title {
   margin: 50px 0 50px 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 28px;
   line-height: 105.3%;
@@ -215,7 +264,7 @@ header {
     border-radius: 10px;
     width: 45%;
     height: 280px;
-    font-family: Poppins; }
+    font-family: Poppins, sans-serif; }
     .portfolio .project .wrapper {
       position: relative;
       width: 100%;
@@ -251,16 +300,6 @@ header {
       width: 25px;
       height: auto;
       fill: white; }
-    .portfolio .portfolio-links a {
-      margin-right: 10px;
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px 10px 15px;
-      border-radius: 20px;
-      background-color: #ff793f;
-      transition: 0.3s; }
-      .portfolio .portfolio-links a:hover {
-        background-color: #cd6133; }
   @media screen and (max-width: 910px) {
     .portfolio {
       width: 90%; }
@@ -273,7 +312,7 @@ header {
         width: 100%; } }
 
 .about {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #84817a;
   margin-left: 10%; }
   .about .about-title {
@@ -284,20 +323,9 @@ header {
     margin-bottom: 20px; }
   .about .content {
     margin-bottom: 50px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 22px; }
-  .about a {
-    font-weight: bold;
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px 15px 20px;
-    border-radius: 50px;
-    background-color: #ff793f;
-    transition: 0.3s; }
-    .about a:hover {
-      background-color: #cd6133; }
   @media screen and (max-width: 376px) {
     .about .content {
       width: auto; } }
@@ -307,7 +335,7 @@ header {
 
 .skill-column {
   margin-top: 100px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   width: 30%; }
   .skill-column li {
@@ -333,46 +361,46 @@ header {
   width: 50%;
   margin-left: 10%;
   color: #84817a;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal; }
   .main-footer .form {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     color: #84817a; }
     .main-footer .form .form-header {
       margin-bottom: 20px; }
       .main-footer .form .form-header input {
-        font-family: Roboto;
+        font-family: Roboto, sans-serif;
         color: #84817a;
         margin-right: 10px;
         font-size: 16px;
         width: 40%;
         line-height: 24px;
         padding: 15px 20px;
-        background: #FFFFFF;
+        background: #fff;
         border: 1px solid rgba(0, 0, 0, 0.07);
         box-sizing: border-box;
-        box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+        box-shadow: 0 7px 15px rgba(95, 104, 186, 0.13);
         border-radius: 14px; }
         .main-footer .form .form-header input:focus-visible {
           outline: none;
-          box-shadow: 0px 7px 15px  #b33939ad; }
+          box-shadow: 0 7px 15px  #b33939ad; }
     .main-footer .form textarea {
-      font-family: Roboto;
+      font-family: Roboto, sans-serif;
       font-size: 16px;
       line-height: 19px;
       color: #84817a;
       padding: 15px 20px;
       width: 100%;
-      background: #FFFFFF;
+      background: #fff;
       border: 1px solid rgba(0, 0, 0, 0.07);
       box-sizing: border-box;
-      box-shadow: 0px 7px 15px rgba(95, 104, 186, 0.13);
+      box-shadow: 0 7px 15px rgba(95, 104, 186, 0.13);
       border-radius: 14px;
       resize: none; }
       .main-footer .form textarea:focus-visible {
         outline: none;
-        box-shadow: 0px 7px 15px #b33939ad; }
+        box-shadow: 0 7px 15px #b33939ad; }
     .main-footer .form button {
       cursor: pointer;
       margin: 30px auto;
@@ -418,7 +446,7 @@ footer {
   position: relative;
   color: white;
   text-align: end;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -430,25 +458,6 @@ footer {
     background-color: #ffb142; }
   footer .social {
     margin: 10px auto; }
-    footer .social a {
-      text-decoration: none;
-      margin-right: 5px; }
-      footer .social a svg {
-        fill: #b33939;
-        position: static;
-        width: 30px;
-        height: auto; }
-  footer .icons-rigth a {
-    color: #ffb142;
-    text-decoration: none;
-    font-weight: bold; }
-    footer .icons-rigth a:hover {
-      color: yellow; }
-  footer svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -5; }
   @media screen and (max-width: 376px) {
     footer {
       text-align: center; }
