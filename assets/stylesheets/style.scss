@@ -571,8 +571,12 @@ footer {
   }
   .icons-rigth {
     a {
-      color: $eye-of-newt;
+      color: $mandaryn-sorbet;
       text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        color: yellow;
+      }
     }
   }
   svg {
