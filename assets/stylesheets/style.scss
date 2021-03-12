@@ -220,7 +220,7 @@ footer .icons-rigth a:hover {
 header {
   position: relative;
   height: 100vh;
-  background-image: url(../images/background.svg);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -333,25 +333,25 @@ header {
   flex-wrap: wrap;
 
   .every-tech {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Every-Tech/raw/development/docs/screenshot.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(../images/tech-screenshot.png);
     background-size: cover;
     background-position: center;
   }
 
   .terminal-movies {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/movie-scraper/raw/readme/img/scraper_screenshot.PNG);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(../images/scraper_screenshot.png);
     background-size: cover;
     background-position: center;
   }
 
   .event {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/overwatch-con/raw/master/assets/desktop-screenshot.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(../images/overwatch-screenshot.png);
     background-size: cover;
     background-position: center;
   }
 
   .newsweek {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(https://github.com/helman101/Newsweek-clone/raw/master/assets/desktop-screenshot.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 98.35%), url(../images/newsweek-screenshot.png);
     background-size: cover;
     background-position: center;
   }
