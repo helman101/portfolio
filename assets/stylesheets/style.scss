@@ -218,7 +218,9 @@ footer .icons-rigth a:hover {
 }
 
 header {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
@@ -228,11 +230,8 @@ header {
 }
 
 .presentation {
-  top: 20%;
-  right: 0;
   width: 80%;
-  height: 100vh;
-  position: absolute;
+  height: fit-content;
   color: white;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -316,6 +315,9 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  @media screen and (max-width: 1033px) {
+    width: 80%;
+  }
 }
 
 .title {
@@ -431,6 +433,26 @@ header {
 
     .project {
       width: 100%;
+    }
+  }
+}
+
+.description-wrapper {
+  width: 90%;
+  margin-left: 20px;
+  .description-title {
+    color: $grey-porcelain;
+    margin: 10px auto;
+  }
+
+  .description-para {
+    width: 80%;
+  }
+
+  .description-list {
+    margin: 15px 20px;
+    li::marker {
+      color: $synthetic-pumpkin;
     }
   }
 }
