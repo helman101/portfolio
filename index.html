@@ -427,13 +427,39 @@
             </p>
           </div>
           <div class="form">
-            <form action="submit">
+            <form class="submit" action="https://postmail.invotes.com/send"
+              method="post" id="email_form">
+
               <div class="form-header">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="example@email.com">
+                <input type="text" name="subject" value="Portfolio Email" style="display: none" />
+                <input type="text" name="extra_name" placeholder="Name" />
+                <input type="text" name="extra_email" placeholder="Email" />
               </div>
-              <textarea cols="30" rows="10" placeholder="Message*"></textarea>
-              <button type="button">Get in touch</button>
+              <textarea name="text" cols="30" rows="10" placeholder="Message*"></textarea>
+              <input type="hidden" name="access_token" value="4l6x0bkybjm13kwlmsbeza8g" />
+                <!-- return urls can be fully qualified -OR-
+                  start with / for root relative -OR-
+                  start with . for url relative --> 
+              <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+              <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+            
+
+              <!-- set the reply-to address -->
+              <!-- <input type="text" name="reply_to"
+                          placeholder="Your Email" /> -->
+
+              <!-- to append extra fields, use the extra_ prefix.
+                  Entries will be appended to your message body. -->
+              <!-- <input type="text" name="extra_phone_number"
+                          placeholder="Phone Number" /> -->
+
+              <!-- to split your message into 160 chars
+                  for an sms gateway -->
+              <!-- <input type="hidden"
+                          name="sms_format" value="true" /> -->
+            
+              <input id="submit_form" type="submit" value="Get in touch" />
+              <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
             </form>
           </div>
         </section>
@@ -498,6 +524,7 @@
         </div>
         <hr>
         <div class="icons-rigth">Icons design by <a href="https://www.freepik.com" target='_blank' title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+        <div class="icons-rigth">Form powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></div>
         <span class="copyright">
           © 2021  Helman Ortegon
         </span>
@@ -512,5 +539,15 @@
         </svg>    
       </footer>
     </div>
+    <script>
+      var submitButton = document.getElementById("submit_form");
+      var form = document.getElementById("email_form");
+      form.addEventListener("submit", function (e) {
+          setTimeout(function() {
+              submitButton.value = "Sending...";
+              submitButton.disabled = true;
+          }, 1);
+      });
+    </script> 
   </body>
 </html>
