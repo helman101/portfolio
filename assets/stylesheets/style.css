@@ -386,6 +386,7 @@ header {
     font-style: normal;
     color: #84817a; }
     .main-footer .form .form-header {
+      margin-top: 10px;
       margin-bottom: 20px; }
       .main-footer .form .form-header input {
         font-family: Roboto, sans-serif;
@@ -419,7 +420,7 @@ header {
       .main-footer .form textarea:focus-visible {
         outline: none;
         box-shadow: 0 7px 15px #b33939ad; }
-    .main-footer .form button {
+    .main-footer .form input[type=submit] {
       cursor: pointer;
       margin: 30px auto;
       font-size: 16px;
@@ -430,7 +431,7 @@ header {
       background: #ff5252;
       border-radius: 60px;
       transition: 0.3s; }
-      .main-footer .form button:hover {
+      .main-footer .form input[type=submit]:hover {
         background-color: #b33939; }
   @media screen and (max-width: 376px) {
     .main-footer {

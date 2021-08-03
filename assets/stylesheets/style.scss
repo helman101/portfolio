@@ -536,6 +536,7 @@ header {
     color: $grey-porcelain;
 
     .form-header {
+      margin-top: 10px;
       margin-bottom: 20px;
 
       input {
@@ -579,7 +580,7 @@ header {
       }
     }
 
-    button {
+    input[type=submit] {
       cursor: pointer;
       margin: 30px auto;
       font-size: 16px;
