@@ -231,7 +231,6 @@ header {
 
 .presentation {
   width: 80%;
-  height: fit-content;
   color: white;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -315,6 +314,7 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+
   @media screen and (max-width: 1033px) {
     width: 80%;
   }
@@ -440,6 +440,7 @@ header {
 .description-wrapper {
   width: 90%;
   margin-left: 20px;
+
   .description-title {
     color: $grey-porcelain;
     margin: 10px auto;
@@ -451,6 +452,7 @@ header {
 
   .description-list {
     margin: 15px 20px;
+
     li::marker {
       color: $synthetic-pumpkin;
     }
